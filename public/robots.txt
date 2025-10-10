@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://doctor-vesnina.vercel.app
+
+# Sitemaps
+Sitemap: https://doctor-vesnina.vercel.app/sitemap.xml
