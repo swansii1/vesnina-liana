@@ -2,8 +2,6 @@
 User-agent: *
 Allow: /
 
-# Host
-Host: https://doctor-vesnina.vercel.app
+Host: https://vesnina-liana.vercel.app
 
-# Sitemaps
-Sitemap: https://doctor-vesnina.vercel.app/sitemap.xml
+Sitemap: https://vesnina-liana.vercel.app/sitemap.xml
