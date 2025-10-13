@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #7e6e54;
+  border-radius: 10px;
+  margin: 10px 10px 0px 10px;
+  color: rgb(245, 245, 245);
+  h1 {
+    font-size: 30px;
+    font-weight: 100;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.icons_wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.icons {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+.icons:hover {
+  background-color: #7e8e5e96;
+  border-radius: 10px;
+  transition: 0.7s;
+}

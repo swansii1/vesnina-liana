@@ -1,0 +1,13 @@
+.icons {
+  cursor: pointer;
+  background-color: white;
+  border-radius: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.icons:hover {
+  background-color: #7e8e5e96;
+  border-radius: 10px;
+  transition: 0.7s;
+}

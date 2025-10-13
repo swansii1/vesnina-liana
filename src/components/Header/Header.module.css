@@ -2,15 +2,53 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgba(255, 255, 255, 0.834);
-  margin-top: 10px;
+  align-items: center;
+  background-color: #aabd84;
   border-radius: 10px;
-  h1{
-    font-size: 30px;
-  }
+  margin: 10px 10px 0px 10px;
+  color: rgb(245, 245, 245);
+}
+
+.name {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .nav {
   display: flex;
   align-items: center;
+}
+
+.icons_wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.icons {
+  cursor: pointer;
+  background-color: white;
+  border-radius: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.icons:hover {
+  background-color: #7e8e5e96;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+
+@media (max-width: 810px) {
+  .name {
+    font-size: 20px;
+  }
+
+  .icons_wrapper {
+    display: none;
+    gap: 10px;
+  }
+
+  .header {
+    height: 60px;
+  }
 }
