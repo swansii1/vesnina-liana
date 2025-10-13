@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import style from "./globals.css";
+import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,7 +21,7 @@ export const metadata = {
     "врач превентивной медицины",
     "женское здоровье",
     "гормональный баланс",
-    "Лиана Веснина",
+    "Веснина Лиана Анатольевна",
     "Ступино",
   ],
   authors: [{ name: "Лиана Веснина" }],
@@ -34,10 +34,10 @@ export const metadata = {
     siteName: "Doctor Vesnina",
     images: [
       {
-        url: "https://doctor-vesnina.vercel.app/preview.jpg",
+        url: "public/liana.jpg",
         width: 1200,
         height: 630,
-        alt: "Доктор Лиана Веснина",
+        alt: "Веснина Лиана Анатольевна",
       },
     ],
     locale: "ru_RU",
@@ -51,12 +51,10 @@ export const metadata = {
     icon: "/icon.png",
   },
 };
-console.log(style);
-
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <body
         className={`wrapper ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
