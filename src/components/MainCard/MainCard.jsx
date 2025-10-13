@@ -1,5 +1,5 @@
 import Image from "next/image";
-import liana_photo from "@/../public/liana.jpg";
+import liana_photo from "@/../public/image/liana.jpg";
 import styles from "@/components/MainCard/MainCard.module.css";
 import { mainData } from "@/utils/data";
 import { raleway } from "@/fonts/fonts";
@@ -16,16 +16,22 @@ export function MainCard() {
         />
 
         <div className={`${styles.icons_wrapper}`}>
-          {contacts.map((item, idx) => (
-            <a
-              className={`${styles.icon}`}
-              key={idx}
-              href={item.link}
-              target="_blank"
-            >
-              <Image className={`${styles.icons}`} src={item.img} alt="icon" />
-            </a>
-          ))}
+          <div className="flex gap-3">
+            {contacts.map((item, idx) => (
+              <a
+                className={`${styles.icon}`}
+                key={idx}
+                href={item.link}
+                target="_blank"
+              >
+                <Image
+                  className={`${styles.icons}`}
+                  src={item.img}
+                  alt="icon"
+                />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -40,7 +46,6 @@ export function MainCard() {
             ))}
           </ul>
         </section>
-        <section></section>
       </div>
     </main>
   );

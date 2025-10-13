@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import favicon from "@/../public/image/icon.png";
+import lianaPhoto from "@/../public/image/liana.jpg";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,7 +36,7 @@ export const metadata = {
     siteName: "Doctor Vesnina",
     images: [
       {
-        url: "public/liana.jpg",
+        url: lianaPhoto.src,
         width: 1200,
         height: 630,
         alt: "Веснина Лиана Анатольевна",
@@ -48,7 +50,7 @@ export const metadata = {
     follow: true,
   },
   icons: {
-    icon: "/icon.png",
+    icon: favicon.src,
   },
 };
 
