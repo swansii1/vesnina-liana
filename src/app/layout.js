@@ -30,7 +30,7 @@ export const metadata = {
       "Лиана Веснина — врач-гинеколог и специалист превентивной медицины в Ступино",
     description:
       "Профессиональные консультации по женскому здоровью и профилактике заболеваний. Онлайн и очные приёмы в Ступино.",
-    url: "https://doctor-vesnina.vercel.app",
+    url: "https://vesnina-liana.vercel.app",
     siteName: "Doctor Vesnina",
     images: [
       {
