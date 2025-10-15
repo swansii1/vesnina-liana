@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import favicon from "@/../public/image/healthcare.png";
 import lianaPhoto from "@/../public/image/liana.jpg";
 
 const geistSans = Geist({
@@ -50,7 +49,7 @@ export const metadata = {
     follow: true,
   },
   icons: {
-    icon: favicon.src,
+    icon: "/favicon.ico",
   },
 };
 

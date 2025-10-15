@@ -1,13 +1,18 @@
-.icons {
-  cursor: pointer;
-  background-color: white;
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: px;
+  background-color: rgb(254, 254, 254);
+  padding: 5px;
   border-radius: 10px;
-  height: 30px;
-  width: 30px;
+  border: 2px solid white;
+  color: rgba(0, 0, 0, 0.696);
+  margin: 7px 0px;
 }
 
-.icons:hover {
-  background-color: #7e8e5e96;
-  border-radius: 10px;
-  transition: 0.7s;
+@media (max-width: 810px) {
+  .photo {
+    width: 50px;
+  }
 }

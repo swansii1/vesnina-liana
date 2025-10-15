@@ -4,6 +4,7 @@ import styles from "@/components/MainCard/MainCard.module.css";
 import { mainData } from "@/utils/data";
 import { raleway } from "@/fonts/fonts";
 import { contacts } from "@/utils/data";
+import { DisplayContacts } from "../DisplayContacts/DisplayContacts";
 
 export function MainCard() {
   return (
@@ -17,20 +18,7 @@ export function MainCard() {
 
         <div className={`${styles.icons_wrapper}`}>
           <div className="flex gap-3">
-            {contacts.map((item, idx) => (
-              <a
-                className={`${styles.icon}`}
-                key={idx}
-                href={item.link}
-                target="_blank"
-              >
-                <Image
-                  className={`${styles.icons}`}
-                  src={item.img}
-                  alt="icon"
-                />
-              </a>
-            ))}
+            <DisplayContacts />
           </div>
         </div>
       </div>
