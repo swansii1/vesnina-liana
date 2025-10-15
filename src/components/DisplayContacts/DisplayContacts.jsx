@@ -6,7 +6,7 @@ import { montserrat } from "@/fonts/fonts";
 
 export function DisplayContacts() {
   return (
-    <>
+    <div className={`${styles.wrapper_contact}`}>
       {contacts.map((item, idx) => (
         <div key={idx} className={`${styles.link} ${montserrat.className}`}>
           <a href={item.link} target="_blank">
@@ -17,6 +17,6 @@ export function DisplayContacts() {
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 }

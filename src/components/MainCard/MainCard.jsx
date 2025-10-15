@@ -3,7 +3,6 @@ import liana_photo from "@/../public/image/liana.jpg";
 import styles from "@/components/MainCard/MainCard.module.css";
 import { mainData } from "@/utils/data";
 import { raleway } from "@/fonts/fonts";
-import { contacts } from "@/utils/data";
 import { DisplayContacts } from "../DisplayContacts/DisplayContacts";
 
 export function MainCard() {
@@ -17,9 +16,7 @@ export function MainCard() {
         />
 
         <div className={`${styles.icons_wrapper}`}>
-          <div className="flex gap-3">
-            <DisplayContacts />
-          </div>
+          <DisplayContacts />
         </div>
       </div>
 
